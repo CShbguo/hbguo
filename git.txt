@@ -29,6 +29,7 @@ git config --global user.name "你的名字"
 三.
 git log  //查看提交历史
 git log --pretty=oneline
-四.
+四.恢复与返回
 git reset --hard commit id  //git reset --hard^
 git reflog //看之前的命令
+
