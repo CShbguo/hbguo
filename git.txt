@@ -32,4 +32,5 @@ git log --pretty=oneline
 四.恢复与返回
 git reset --hard commit id  //git reset --hard^
 git reflog //看之前的命令
+五.
 
