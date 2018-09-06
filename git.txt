@@ -27,6 +27,8 @@ git config --global user.name "你的名字"
 
 如果git status告诉你有文件被修改过，用git diff可以查看修改内容
 三.
-git log
+git log  //查看提交历史
 git log --pretty=oneline
-是
+四.
+git reset --hard commit id  //git reset --hard^
+git reflog //看之前的命令
