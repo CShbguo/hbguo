@@ -39,11 +39,12 @@ git reflog //看之前的命令
 
 场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库
 六：远程库
+
+远程网址
 https://www.cnblogs.com/zhangxiaoyong/p/6000084.html
-1）先注册个github帐号
+1）先注册个github帐号 （帐号：CShbguo 密码：hb512111）
 2）创建一个远程库，https://blog.csdn.net/Hanani_Jia/article/details/77950594
 把本地传到远程
-
 执行:git remote add origin git@github.com:CShbguo/hbguo.git
 //git remote add origin https://github.com/tugenhua0707/testgit.git (需要输入用户密码)
 报错：fatal: remote origin already exists 
@@ -61,4 +62,6 @@ error: failed to push some refs to 'git@github.com:CShbguo/hbguo.git'
 
 Username for 'https://github.com':
 解决：（保存用户名）git remote set-url origin git+ssh://git@github.com/CShbguo/hbguo.git
+把远程传到本地
+git clone git@github.com:CShbguo/hbguo.git
 
