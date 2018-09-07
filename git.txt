@@ -38,4 +38,25 @@ git reflog //看之前的命令
 场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset HEAD <file>，就回到了场景1，第二步按场景1操作。
 
 场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库
+六：远程库
+https://www.cnblogs.com/zhangxiaoyong/p/6000084.html
+1）先注册个github帐号
+2）创建一个远程库，https://blog.csdn.net/Hanani_Jia/article/details/77950594
+把本地传到远程
+
+执行:git remote add origin git@github.com:CShbguo/hbguo.git
+//git remote add origin https://github.com/tugenhua0707/testgit.git
+报错：fatal: remote origin already exists 
+1.先删除远程 Git 仓库
+   git remote rm origin
+2.再添加远程 Git 仓库
+   git remote add origin git@github.com:FBing/java-code-generator
+3.如果执行 git remote rm origin 报错的话，我们可以手动修改gitconfig文件的内容
+error: failed to push some refs to 'git@github.com:CShbguo/hbguo.git'
+
+执行:git push -u origin master
+报错：error: failed to push some refs to 'git@github.com:CShbguo/hbguo.git'
+1.git pull --rebase origin master
+2.此时再执行语句 git push -u origin master即可完成代码上传到github
+
 
