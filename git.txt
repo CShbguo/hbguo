@@ -41,7 +41,7 @@ git reflog //看之前的命令
 
 场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库
 
-一是确实要从版本库中删除该文件，那就用命令git rm删掉，并且git commit
+一是确实要从版本库中删除该文件，那就用命令git rm xxx删掉，并且git commit
 二 从版本库恢复 git checkout -- test.txt
 六：远程库
 
@@ -69,4 +69,29 @@ Username for 'https://github.com':
 解决：（保存用户名）git remote set-url origin git+ssh://git@github.com/CShbguo/hbguo.git
 把远程传到本地
 git clone git@github.com:CShbguo/hbguo.git
+//显示中文
+git config --global core.quotepath false
 
+从而获得commit ID，我们就可以知道commit ID了，然后使用命令：git show commitID来看
+
+git config --global i18n.commitencoding utf-8
+git config --global i18n.logoutputencoding utf-8
+export LESSCHARSET=utf-8
+
+.gitignore
+
+
+远程库拷贝
+1.在本地创建一个ssh key
+$ ssh-keygen-t rsa-C "your_email@youremail.com"需要输入这个代码，引号内需要改成你在注册GitHub的时候绑定的邮箱账号。之后会有一些简单的让你确认的操作，之后让你会提示操作路径、密码等等，一般情况下就直接按回车一路过就可以。
+在用户目录下.ssh找到id_rsa里面的密钥，登录到你的GitHub上边添加这个密匙。
+用 ssh -T git@github.com 验证是否添加成功
+在输入yes后如果出现了：You've successfully authenticated, but GitHub does not provide shell access 。那就说明，已经成功连上了GitHub
+2.设置参数
+git config --global user.name "CShbguo"
+git config  --global user.email "377392543@qq.com"
+3.拷贝到本地
+git clone https://github.com/CShbguo/hbguo.git
+
+
+ 
