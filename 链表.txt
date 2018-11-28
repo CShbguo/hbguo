@@ -1,0 +1,64 @@
+typedef struct node{
+	int data;
+	struct node *next;
+}list_link;
+list_link *creat(int a,int n)
+{
+	list_link *head ,cur,end;
+	head=(list_link *)malloc(sizeof(list_link));
+	end=head;
+	for(int i=0;i<n;i++)
+	{
+		cur=malloc(sizeof(list_link));
+		end->next=cur;
+		end=cur;
+	}
+	end->next=null;
+	return head;
+}
+
+void del_list(list_link *list,int n)
+{
+	list_link * t=list,*last;
+	
+	int i=0;
+	while(i<n&& t!=null)
+	{
+		last=t;
+		t=t->next;
+		i++；
+	}
+	if(t!=null)
+	{
+		last->next=t->next;
+		free(t)；
+	}
+	else
+	{
+		
+	}
+}
+void del_list(list_link *list,int n)
+{
+	list_link * t=list,*last,*new;
+	
+	int i=0;
+	while(i<n&& t!=null)
+	{
+		last=t;
+		t=t->next;
+		i++；
+	}
+	if(t!=null)
+	{
+		
+		new=malloc(sizeof(list_link));
+		new->next=t->next；
+		t->next=new;
+	
+	}
+	else
+	{
+		
+	}
+}

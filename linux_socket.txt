@@ -1,0 +1,26 @@
+https://zm12.sm-tc.cn/?src=l4uLj4zF0NCIiIjRnJGdk5CYjNGckJLQsoazkIma0qyKkpKajdCP0MrNzsrNx8jRl4uSkw%3D%3D&uid=51ee7105d46a478ea87cafe2f314129c&hid=ee81203218161769c965d8b1ccf5630d&pos=4&cid=9&time=1542999604389&from=click&restype=1&pagetype=0020004000000402&bu=ss_doc&query=Linux%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B&mode=&v=1&force=true&wap=false&uc_param_str=dnntnwvepffrgibijbprsvdsdichei
+网络编程指的是socket套接字编程，
+TCP/IP参考模型分为4个层次：应用层 ，传输层，网络互联层，主机到网络层
+TCP是面向连接的服务，其中包括三次握手建立连接的过程，而UDP则是无连接的服务
+服务器段：
+socket :创建套接字
+bond:与某端口绑定
+listen:监听
+accept:接收链接请求（实现三次握手）
+recv()
+send()
+close；
+客户端
+socket:
+connect（实现三次握手）
+send
+recv
+close
+
+socket, bind, listen, connect, accept
+-----------------------------------------------------
+线程
+线程的信号量主要就是实现对公共资源的一种控制管理。当公共资源增加时，信号量的值增加；当公共资源减少时，信号量的值减少；只有信号量的值大于0时，才能访问信号量所代表的公共资源。其实功能和之前的ucos的信号量功能类似
+sem_init
+pthread_mutex_init函数主要的功能是初始化一个互斥锁
+只允许一个线程对一段代码或者资源进行访问的机制。当有一个线程获得互斥锁后，其他线程如果想获得互斥锁就会被阻塞，直到占有互斥锁的线程释放互斥锁为止。线程的互斥主要包含的函数有如下几个

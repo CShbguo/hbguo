@@ -1,0 +1,26 @@
+快捷键整理:
+
+Ctrl+K+D  快速对齐代码
+
+Ctrl+K+C  注释所选代码
+
+Ctrl+K+U  取消对所选代码的注释
+
+Ctrl+Z  撤销
+
+Ctrl+S  保存
+
+Ctrl+J  快速弹出只能提示
+
+F1  转到帮助文档
+
+#Region&#EndRegion  折叠冗余代码
+
+VS2017中无法设置冗余代码:工具=>选项=>文本编辑器=>C# =>高级=>大纲（折叠到定义时可折叠#region）
+
+输入cw，然后按两次tab Console.WriteLine();
+--------------------- 
+作者：DerWalundDieKatze 
+来源：CSDN 
+原文：https://blog.csdn.net/sinat_31230641/article/details/80330636 
+版权声明：本文为博主原创文章，转载请附上博文链接！

@@ -1,0 +1,9 @@
+staff 员工
+sale  销售
+manager 经理
+wages    工资
+hour   小时
+Technician 技术员 
+Proportion 比例
+
+Fixed salary 固定工资 
