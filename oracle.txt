@@ -1,0 +1,28 @@
+system 
+Hb512111
+/****************************************
+oracle的安装
+1.服务器的安装
+2.客户端的安装
+
+
+一.实例：进程和内存
+二.oracle常用命令:
+有些服务改为手动，不影响开机速度
+oracle工具的使用
+SQL命令行方式，SQLplus
+浏览器方式 基于WEB的企业管理器
+Sql Developer
+PLAQL Developer 工具
+
+SQL Plus 常用命令
+Connect:切换链接用户
+Show user :显示当前用户
+Host <dos命令>:执行操作系统命令
+Spool:导出记录到文本
+CLear screen :清屏
+Start d:\test.sql 执行文件系统中的SQL语句
+Desc :显示表结构
+Show error:显示错误信息
+Exit :退出
+

@@ -27,7 +27,8 @@ int
 14.多态
 15.函数指针重温
 16.复习总结
-
+17.异常处理
+18.类模板
 //知识点
 1.命名空间
 个人理解：命名空间相当于作用域，防止命名重复
@@ -666,3 +667,23 @@ catch (double b)
 {
 	cout<<"throw--"<<b<<endl;
 }
+---------------
+类模板 //友元函数要注意
+template <class numtype (虚拟类型参数)>
+class TIME{
+TIME(numtype a);
+}
+类模板名 <实际类型名> 对象名（参数表）
+TIME <int> t1(1)
+类外定义函数
+template <class numtype (虚拟类型参数)>
+ TIME<numtype>  TIME<numtype> ::func(numtype a)
+ {
+ }
+ --------------------------------
+STL标准模板库，是基于函数模板和类模板
+standard template library
+ 容器：把元素拷贝到容器里面 类似数组，放进去的是指针 
+ 迭代器：类似指针
+ 算法：算法和迭代器进行无缝的链接
+ 
